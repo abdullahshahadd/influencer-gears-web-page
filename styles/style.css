@@ -2,7 +2,7 @@
 
 body {
     font-family: "Poppins", serif;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -43,4 +43,65 @@ nav ul img {
 nav ul {
     gap: 34px;
     font-size: 0.8rem;
+}
+
+/* banner styles */
+
+.banner-section {
+    justify-content: space-between;
+}
+
+.banner-info {
+    max-width: 600px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.banner-button {
+    background-color: rgba(224, 44, 109, 1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    width: 190px;
+    height: 45px;
+    font-weight: 800;
+    margin-top: 16px;
+}
+
+.banner-img-container {
+    position: relative;
+}
+
+.banner-img-container img {
+    max-width: 100%;
+}
+
+.banner-img2 {
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+/* responsive for small device */
+
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
 }
